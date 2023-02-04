@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template-rows: 25% / auto / auto / auto / auto / auto;
     justify-items: center;
+    width: 200px;
 }
 
 .wave {
