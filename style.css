@@ -11,7 +11,7 @@ body {
 .controls {
     grid-column: 1;
     display: grid;
-    grid-template-columns: 25% / auto / auto / auto / 25%;
+    grid-template-rows: 25% / auto / auto / auto / 25%;
     justify-items: center;
     width: 200px;
     height: 500px;
