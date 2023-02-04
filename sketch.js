@@ -1,4 +1,4 @@
-const tone = require('tone')
+const tone = Tone
 const waveMenu = document.getElementById('waveforms')
 const brushes = document.getElementById('brushes')
 const note = new tone.OmniOscillator(440, waveMenu.value).toDestination()
@@ -24,7 +24,7 @@ function draw() {
     time = (time + 1) % 255
     if (mouseIsPressed && mouseX >= 0 && mouseY >= 0 && mouseX <= 1000 && mouseY <= 1000) {
         note.start()
-        note.volume.value = -12
+        note.volume.value = 6
         note.frequency.value = Math.max((mouseX + mouseY)/4, 0) + 150
         fill(Math.max(255 - time), Math.floor(mouseX*255/1000), Math.floor(mouseY*255/1000))
         switch (brushes.value) {
