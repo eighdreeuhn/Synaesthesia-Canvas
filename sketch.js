@@ -28,7 +28,7 @@ function draw () {
     mouseY <= 1000
   ) {
     note.start()
-    note.volume.value = 6
+    note.volume.value = -22
     note.frequency.value = Math.max((mouseX + mouseY) / 4, 0) + 150
     fill(
       Math.max(255 - time),
