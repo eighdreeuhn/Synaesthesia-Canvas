@@ -10,14 +10,14 @@ body {
 
 .controls {
     grid-column: 1;
-    display: grid;
+    display: block;
     grid-template-rows: 25% / auto / auto / auto / 25%;
     justify-items: center;
     width: 200px;
     height: 500px;
 }
 
-.wave {
+/* .wave {
     grid-column: 2;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .reset {
     grid-column: 4;
-}
+} */
 
 main {
     grid-column: 2;
