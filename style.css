@@ -4,6 +4,10 @@ body {
     background-color: rgb(72, 72, 65);
 }
 
+#jobseer-app-root {
+    display: none;
+}
+
 .controls {
     grid-row: 1;
     display: grid;
