@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 150px / auto;
+    grid-template-columns: 100px / auto;
     background-color: rgb(72, 72, 65);
 }
 
@@ -10,27 +10,36 @@ body {
 
 .controls {
     grid-column: 1;
-    display: block;
+    display: grid;
     grid-template-rows: 25% / auto / auto / auto / 25%;
-    justify-items: center;
-    width: 200px;
+    justify-items: right;
     /* height: 500px; */
 }
 
-/* .wave {
-    grid-column: 2;
+.wave {
+    display: inline;
+    grid-row: 2;
+    margin-right: 25px;
+    width: 300px;
 }
 
 .brush {
-    grid-column: 3;
+    display: inline;
+    grid-row: 3;
+    margin-right: 25px;
+    width: 300px;
 }
 
 .reset {
-    grid-column: 4;
-} */
+    display: inline;
+    grid-row: 4;
+    margin-right: 25px;
+    width: 300px;
+}
 
 main {
     grid-column: 2;
+    margin-top: 5%;
 }
 
 button {
