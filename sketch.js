@@ -24,7 +24,7 @@ function draw() {
     time = (time + 1) % 255
     if (mouseIsPressed && mouseX >= 0 && mouseY >= 0 && mouseX <= 1000 && mouseY <= 1000) {
         note.start()
-        note.volume.value = 6
+        note.volume.value = 0
         note.frequency.value = Math.max((mouseX + mouseY)/4, 0) + 150
         fill(Math.max(255 - time), Math.floor(mouseX*255/1000), Math.floor(mouseY*255/1000))
         switch (brushes.value) {
