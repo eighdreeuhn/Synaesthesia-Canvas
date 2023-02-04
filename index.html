@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"
+      integrity="sha512-Siyxh4gyNM5SaERNa9BOZSPcu/auHyFUWn9OVFD7MxI3/dVPQklE7tfqS+pLmPHF1zo6UdDaJAp/thihrf0c7w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Circle Time!</title>
+  </head>
+  <body>
+    <section class="controls">
+      <div class="wave">
+        <label for="waveforms" style="color: whitesmoke">WAVEFORM</label>
+        <select name="waveforms" id="waveforms" onchange="handleWaveform()">
+          <option value="sine" selected>sine</option>
+          <option value="fatsine">fatsine</option>
+          <option value="triangle">triangle</option>
+          <option value="fattriangle">fattriangle</option>
+          <option value="square">square</option>
+          <option value="fatsquare">fatsquare</option>
+          <option value="sawtooth">sawtooth</option>
+          <option value="fatsawtooth">fatsawtooth</option>
+        </select>
+      </div>
+      <div class="brush">
+        <label for="brushes" style="color: whitesmoke">BRUSHES</label>
+        <select name="brush" id="brushes">
+            <option value="circle" selected>circle</option>
+          <option value="triangle">triangle</option>
+          <option value="square">square</option>
+          <option value="ellipse">ellipse</option>
+        </select>
+      </div>
+      <div class="reset">
+        <label for="reset" style="color: whitesmoke">CLEAR</label>
+        <button onclick="setup()">RESET</button>
+      </div>
+    </section>
+    <script src="sketch.js"></script>
+  </body>
+</html>

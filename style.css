@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr / 2fr;
+    background-color: rgb(72, 72, 65);
+}
+
+.controls {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 25% / auto / auto / auto / auto / auto;
+    justify-items: center;
+}
+
+.wave {
+    grid-row: 2;
+}
+
+.brush {
+    grid-row: 3;
+}
+
+.reset {
+    grid-row: 4;
+}
+
+main {
+    grid-column: 2;
+}
+
+button {
+    border-radius: 10%;
+    width: 100px;
+    height: 50px;
+}
+
+canvas {
+    margin: 15% 0%;
+    border: 1px solid whitesmoke;
+}
