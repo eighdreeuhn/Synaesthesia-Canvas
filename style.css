@@ -14,7 +14,7 @@ body {
     grid-template-rows: 25% / auto / auto / auto / 25%;
     justify-items: center;
     width: 200px;
-    height: 500px;
+    /* height: 500px; */
 }
 
 /* .wave {
@@ -40,6 +40,5 @@ button {
 }
 
 canvas {
-    margin: 5% 0%;
     border: 1px solid whitesmoke;
 }
