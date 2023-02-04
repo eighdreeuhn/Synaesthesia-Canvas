@@ -17,7 +17,7 @@
   <body>
     <section class="controls">
       <div class="wave">
-        <label for="waveforms" style="color: whitesmoke"><h3>WAVEFORM</h3</label>
+        <label for="waveforms" style="color: whitesmoke"><h3>WAVEFORM:&nbsp;</h3></label>
         <select name="waveforms" id="waveforms" onchange="handleWaveform()">
           <option value="sine" selected>sine</option>
           <option value="fatsine">fatsine</option>
@@ -30,8 +30,8 @@
         </select>
       </div>
       <div class="brush">
-        <label for="brushes" style="color: whitesmoke"><h3>BRUSHES</h3></label>
-        <select name="brush" id="brushes">
+        <label for="brushes" style="color: whitesmoke"><h3>BRUSHES:&nbsp;</h3></label>
+        <select name="brushes" id="brushes">
             <option value="circle" selected>circle</option>
             <option value="triangle">triangle</option>
             <option value="square">square</option>
@@ -39,8 +39,8 @@
         </select>
       </div>
       <div class="reset">
-        <label for="reset" style="color: whitesmoke"><h3>CLEAR</h3></label>
-        <button onclick="setup()">RESET</button>
+        <label for="reset" style="color: whitesmoke"><h3>CLEAR:&nbsp;</h3></label>
+        <button name="reset" id="reset" onclick="setup()">RESET</button>
       </div>
     </section>
     <script src="sketch.js"></script>
