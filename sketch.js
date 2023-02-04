@@ -1,4 +1,4 @@
-const tone = Tone
+const tone = require('tone')
 const waveMenu = document.getElementById('waveforms')
 const brushes = document.getElementById('brushes')
 const note = new tone.OmniOscillator(440, waveMenu.value).toDestination()
